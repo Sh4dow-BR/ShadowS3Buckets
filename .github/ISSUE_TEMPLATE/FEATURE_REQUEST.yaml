@@ -1,0 +1,24 @@
+name: Feature Request
+description: I have a suggestion and might want to implement myself! :)
+title: "[Feature]: "
+labels: ["enhancement", "todo"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this feature request!
+  - type: textarea
+    id: feature
+    attributes:
+      label: Feature request:\
+      value: "Insert the possible feature details and possibly a reason why this feature would be interesting :)"
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct:\
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/Sh4dow-BR/S3/blob/master/docs/CODE_OF_CONDUCT.md).
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
