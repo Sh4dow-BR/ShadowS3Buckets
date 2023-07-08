@@ -238,7 +238,7 @@ Example JSON trust policy that permits every IAM User in "Account A" to assume a
 
 This permissions policy is the same configured for a single IAM User.
 
-You can use the same JSON policy that you used when configuring the [IAM](#-aws-iam-permissions-1) permissions.
+You can use the same JSON policy that you used when configuring the [IAM](#-aws-iam-permissions) permissions.
 
 
 ## 🗡 Using ShadowS3Buckets
