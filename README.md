@@ -285,13 +285,13 @@ To contribute to ShadowS3Buckets, follow these steps:
 3. Make your changes in your favorite IDE and stage the changes: `git add .`
 4. Make a commit with a message of the changes you made: `git commit -m '<commit_message>'`
 5. Send it to the original branch: `git push`
-6. Create a pull request using the [pull request template](docs\pull_request_template.md)
+6. Create a pull request using the [pull request template](docs/pull_request_template.md)
 
 As an alternative, check out the official GitHub documentation on how to [contribute to projects](https://docs.github.com/en/get-started/quickstart/contributing-to-projects).
 
 ## 🐞 Bugs or feature requests?
 
-In the .github folder, there are 2 files: [BUG_REPORT.yaml](.github\ISSUE_TEMPLATE\BUG_REPORT.yaml) & [FEATURE_REQUEST.yaml](.github\ISSUE_TEMPLATE\FEATURE_REQUEST.yaml) that comes preloaded with information that will help theses requests.
+In the .github folder, there are 2 files: [BUG_REPORT.yaml](.github/ISSUE_TEMPLATE/BUG_REPORT.yaml) & [FEATURE_REQUEST.yaml](.github/ISSUE_TEMPLATE/FEATURE_REQUEST.yaml) that comes preloaded with information that will help theses requests.
 
 ## 😕 Known issues and possible future features
 
