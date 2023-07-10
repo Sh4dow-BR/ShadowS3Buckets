@@ -8,7 +8,7 @@ ShadowS3Buckets has the capability to check multiple features of every bucket in
 Be aware that I'm not a professional programmer, so I imagine a lot of refactoring can be done in the code to improve it and any help is greatly appreciated!
 ****** Most of the configuration or ajustments that you will need to check/do/define inside the script will be in the 'main' & 'assume_role' function ******
 Thanks!
-- Fernando (Sh4dowBR)
+- Fernando (Sh4dow-BR)
 """
 
 
@@ -88,7 +88,7 @@ def banner():
 ░░█████████  ████ █████░░████████░░████████░░██████   ░░████░████      ░░█████████ ░░████████     ███████████  ░░████████░░██████  ████ █████░░██████   ░░█████  ██████ 
  ░░░░░░░░░  ░░░░ ░░░░░  ░░░░░░░░  ░░░░░░░░  ░░░░░░     ░░░░ ░░░░        ░░░░░░░░░   ░░░░░░░░     ░░░░░░░░░░░    ░░░░░░░░  ░░░░░░  ░░░░ ░░░░░  ░░░░░░     ░░░░░  ░░░░░░  
     
-                                   Created by Fernando (Sh4dowBR) - https://github.com/Sh4dow-BR - https://shadowsecurity.com.br
+                                   Created by Fernando (Sh4dow-BR) | https://github.com/Sh4dow-BR | https://shadowsecurity.com.br
     """
     print("\033[31;1m" + banner_script + "\033[98m\033[00m")
 
