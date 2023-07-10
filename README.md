@@ -1,6 +1,8 @@
 <div align="center">
 
-# ShadowS3Buckets
+<img src="docs/imgs/logo.png" alt="ShadowS3Buckets Logo" width=500>
+
+# ShadowS3Buckets is an AWS Boto3 Python script that validates AWS S3 buckets in an account or various accounts checking for wrongly configured buckets.
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/Sh4dow-BR/ShadowS3Buckets)
 ![GitHub language count](https://img.shields.io/github/languages/count/Sh4dow-BR/ShadowS3Buckets)
@@ -8,12 +10,10 @@
 ![Bitbucket open issues](https://img.shields.io/bitbucket/issues/Sh4dow-BR/ShadowS3Buckets)
 ![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/Sh4dow-BR/ShadowS3Buckets)
 
-<img src="docs/imgs/logo.png" alt="ShadowS3Buckets Logo" width=500>
-
-## It's a Python script that validates AWS S3 buckets in an account or various accounts checking for wrongly configured buckets.
 </div>
 
-### ⭐ What can ShadowS3Buckets do and how can it help you?
+
+## ⭐ What can ShadowS3Buckets do and how can it help you?
 
 - It can make API calls with the default configured AWS profile and different profiles with the '-p' parameter.
 - It can make API calls to different AWS accounts to do the same checks inside the account.
@@ -29,14 +29,46 @@
 - Every function has a try/except statement to help avoid unexpected errors.
 
 
-### ⭐ What are AWS S3 buckets?
+## ⭐ What are AWS S3 buckets?
 
 Amazon Simple Storage Service (Amazon S3) is an object storage service that offers industry-leading scalability, data availability, security, and performance. Customers of all sizes and industries can use Amazon S3 to store and protect any amount of data for a range of use cases, such as data lakes, websites, mobile applications, backup and restore, archive, enterprise applications, IoT devices, and big data analytics. Amazon S3 provides management features so that you can optimize, organize, and configure access to your data to meet your specific business, organizational, and compliance requirements. <b>Source: [AWS](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html)</b>
 
 If you want to check out the official S3 Security best practices guide with recommendations of AWS, check it out [here](https://docs.aws.amazon.com/AmazonS3/latest/userguide/security-best-practices.html)!
 
-## 💻 Prerequesites
+### 💯 So what started this project and how long did it take?
 
+When Fernando(Sh4dow-BR) decided to make a career change, at the beginning of 2023, he wanted to learn everything and anything related to Cloud Security in the AWS world.
+
+He eventually came across these blog posts: [Amazon S3 now encrypts data by default](https://www.techtarget.com/searchstorage/news/252529106/Amazon-S3-now-encrypts-data-by-default) & [TOP 11 AWS MISCONFIGURATIONS AND HOW TO AVOID THEM](https://www.crowdstrike.com/cybersecurity-101/cloud-security/common-aws-misconfigurations/) and as a result, he created his site to also share Cloud Security content.
+
+So with that in mind, he had an ambitious and crazy desire to learn and build something hands-on to better understand how S3 buckets work since it's one of the most common misconfigured services in AWS!
+
+As a result, he then started to delve into the docs of the [AWS SDK (Boto3)](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html), and Python for the first time ever, so please don't mind his very noob programming skills in the code! 😅
+
+The initial idea of this project was to make a script that would ONLY check the Server-Side Encryption status of S3 Buckets, however, as he was making the script, he got so thrilled with everything that he was learning and practicing, that kept on adding more and more checks.
+
+The main development time of this project was between February 2023 - April 2023, with a pause for a couple of months. (Thank God for the comments that were made, to understand the code once again 😂)
+
+So to finally release the project, he added additional comments, removed unnecessary code, and some adjustments to release the "v0.1" in July 2023 with an expectation of possible future collaborators? 🙏
+
+
+### ❓ So why the name ShadowS3Buckets?
+
+Shadow represents an extension of its creator, Sh4dow-BR and S3 Buckets, well...this is a script about them right? 😂 
+
+So he thought, why not merge the 2 terms..??
+
+Creative? Maybe not so much 😂😂 but he truly hopes it helps you!
+
+By the way, the logo may also not be so creative, but it was made in Canva by Fernando himself! 😅
+
+
+### 🌐 What is shadowsecurity.com.br?
+
+It's the creator's website/blog where he'll eventually post and blog about Cloud & Security-related posts! 😅
+
+
+## 💻 Prerequesites
 
 You need to have [git](https://git-scm.com/downloads) installed to clone the repo.
 
@@ -174,6 +206,7 @@ Example JSON policy with a condition that only permits these actions if the user
 }
 ```
 
+
 ## ☁ AWS Assume Role in different accounts
 
 There is a function inside the script, 'assume_role', that will try to assume a role in other AWS accounts (a 12-digit #) that you define in the 'ACCOUNT_IDS' constant. 
@@ -188,6 +221,7 @@ By default, the 'assume_role' function in this script will call upon the 'Organi
 
 <hr>
 
+
 ### Configuring or editing a role in "Account B"
 
 When you create or edit a role in "Account B" it's necessary to configure and attach <b>2 policies</b> to the role:
@@ -195,6 +229,7 @@ When you create or edit a role in "Account B" it's necessary to configure and at
 A trust relationship policy & a permissions policy.
 
 <hr>
+
 
 #### Trust relationship policy:
 
@@ -233,6 +268,7 @@ Example JSON trust policy that permits every IAM User in "Account A" to assume a
 ```
 
 <hr>
+
 
 #### Permissions policy:
 
@@ -289,9 +325,11 @@ To contribute to ShadowS3Buckets, follow these steps:
 
 As an alternative, check out the official GitHub documentation on how to [contribute to projects](https://docs.github.com/en/get-started/quickstart/contributing-to-projects).
 
+
 ## 🐞 Bugs or feature requests?
 
-In the .github folder, there are 2 files: [BUG_REPORT.yaml](.github/ISSUE_TEMPLATE/BUG_REPORT.yaml) & [FEATURE_REQUEST.yaml](.github/ISSUE_TEMPLATE/FEATURE_REQUEST.yaml) that comes preloaded with information that will help theses requests.
+In the .github folder, there are 2 files: [BUG_REPORT.yaml](.github/ISSUE_TEMPLATE/BUG_REPORT.yaml) & [FEATURE_REQUEST.yaml](.github/ISSUE_TEMPLATE/FEATURE_REQUEST.yaml) that comes preloaded with information that will help these requests.
+
 
 ## 😕 Known issues and possible future features
 
@@ -304,6 +342,7 @@ Since the project is still in the early stages, a lot of improvements can be mad
 ## 😏 Code of conduct
 
 Check out the code of conduct [here](docs/CODE_OF_CONDUCT.md).
+
 
 ## 📝 License
 
