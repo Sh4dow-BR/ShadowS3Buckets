@@ -16,16 +16,16 @@
 ## ⭐ What can ShadowS3Buckets do and how can it help you?
 
 - It can make API calls with the default configured AWS profile and different profiles with the '-p' parameter.
-- It can make API calls to different AWS accounts to do the same checks inside the account.
-- It's built in a modular way, with various functions, so you can choose which checks you'd like to see.
-- It can assume roles in as many other accounts as you need to check the buckets in the account.
-- It can list all the bucket names of each account.
-- It can check the server-side encryption status of each bucket.
-- It can check the versioning status of each bucket.
-- It can check the public access block status of each bucket.
-- It can check the bucket policy status of each bucket.
-- It can output the JSON bucket policy of each bucket.
-- It has various comments inside of it to help understand the overall flow and logic of each function.
+- It can make API calls to multiple AWS accounts and check inside each account.
+- It's built in a modular way, with various functions, so you can choose which checks you'd like to execute.
+- It can assume roles in as many other accounts as you need to check the status of each bucket in each account.
+- It can list all the bucket names in each account.
+- It can check the server-side encryption status of each bucket in each account.
+- It can check the versioning status of each bucket in each account.
+- It can check the public access block status of each bucket in each account.
+- It can check the bucket policy status of each bucket in each account.
+- It can output the JSON bucket policy of each bucket in each account.
+- It has various comments inside of it with the intention to help you understand the overall flow and logic of what each function is doing.
 - Every function has a try/except statement to help avoid unexpected errors.
 
 
